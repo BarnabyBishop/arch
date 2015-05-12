@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/styles/app.css">
+</head>
+<body>
+	<script>
+		var URLS = [
+		{% for url in urls %}
+			'{{url}}',
+		{% endfor %}
+		];
+	</script>
+
+	<script src="/js/common.js"></script>
+	<script src="/js/index.js"></script>
+</body>
+</html>
